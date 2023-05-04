@@ -1,0 +1,278 @@
+@font-face { font-family: Poppins-Bold; src: url('/fonts/Poppins-Bold.ttf'); } 
+@font-face { font-family: Poppins-Regular; src: url('/fonts/Poppins-Regular.ttf'); } 
+@font-face { font-family: Poppins-Semibold; src: url('/fonts/Poppins-SemiBold.ttf'); } 
+
+body{
+    color: #C5A181;
+    background-color: #212121;
+    font-family: 'Poppins-Regular';
+}
+
+.primaryColor{
+    color:#C5A181;
+}
+.secondaryColor{
+    color:#212121;
+}
+
+.content-primary{ 
+    background: #C5A181;
+}
+.content-secondary{ 
+    background: #212121;
+}
+
+.regular-font{
+    font-family: Poppins-Regular;
+}
+.bold-font{
+    font-family: Poppins-Bold;
+}
+.semibold-font{
+    font-family: Poppins-Semibold;
+}
+.large-font{
+    font-size: large;
+}
+.xxx-large-font{
+    font-size: xxx-large!important;
+}
+.xx-large-font{
+    font-size: xx-large;
+}
+.medium-font{
+    font-size: medium;
+}
+
+.content-1 {
+    position: relative;
+    text-align: center;
+     /* height: 600px;
+     background-image: url('/images/Banner.svg');
+    background-size: cover;
+    background-repeat: no-repeat; */
+}
+.title-content-1{
+    position: absolute;
+    width: 40%;
+    top: 45%;
+    left: 10%;
+    transform: translate(-10%, -50%);
+}
+.img-content-1{
+    position: absolute;
+    width: 40%;
+    top: 45%;
+    left: 60%;
+    transform: translate(-10%, -50%);
+}
+
+/*Bio section*/
+.text-container-5{
+    padding-bottom: 5%;
+}
+.text-content-5 {
+    font-size: xx-large;
+}
+.text-code{
+    font-family: AnekTamil-Regular;
+    font-size: 4.5vw;
+}
+.text-container-2{
+    max-width: 100%;
+    padding-left: 5%;
+    padding-right: 3%;
+    align-self: center;
+}
+
+/*Bio section*/
+.text-container-5{
+    padding-bottom: 5%;
+}
+.text-content-5 {
+    font-size: xx-large;
+}
+.text-container-2{
+    max-width: 100%;
+    padding-left: 5%;
+    padding-right: 3%;
+    align-self: center;
+}
+/*Inicio Estilos del navbar*/
+
+.logo-navbar2 {
+    min-width: 120px;
+    padding-left: 5%;
+}
+
+nav {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 99999;
+}
+  
+nav .brand {
+    font-weight: bold;
+}
+  
+nav div.nav-group {
+    display: flex;
+    padding: 10px 80px;
+}
+  
+a.menu-item {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.5s ease;
+    border-bottom: 3px solid rgba(0,0,0,0);
+}
+  
+a.menu-item:hover {
+    border-bottom: 3px solid #C5A181;
+}
+  
+.nav-group.hamburger {
+    display: none;
+}
+  
+.menus .hamburger {
+    display: none;
+}
+  
+.menus .hamburger div:first-of-type {
+    transform: rotate(-45deg) translate(-3px, 2px);
+}
+.menus .hamburger div:last-of-type {
+    transform: rotate(45deg) translate(-3px, -2px);
+}
+  
+.hamburger div {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background: #C5A181;
+    margin: 5px;
+}
+  
+.nav-group.menus .menu-item:not(:first-child) {
+    margin-left: 1.4rem;
+}
+  
+@media screen and (max-width: 576px) {
+    .menus.nav-group {
+      background-color: rgba(64, 56, 55, 1);
+      display: flex;
+      flex-direction: column;
+      padding: 0 !important;
+      margin: 0 !important;
+      position: fixed;
+      top: -100vh;
+      left: 0;
+      height: 100vh;
+      width: 100vw;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.7s ease;
+    }
+  
+    .menus.nav-group.show {
+      top: 0;
+    }
+  
+    .menus.nav-group a {
+      font-size: 1.5rem;
+    }
+
+    nav div.nav-group {
+        display: flex;
+        padding: 10px 30px;
+    }
+  
+    .menus.nav-group a.menu-item:not(:first-child) {
+      margin-left: 0;
+      margin-top: 1.7rem;
+    }
+  
+    .nav-group.hamburger {
+      display: block;
+    }
+    
+    .menus .hamburger {
+      display: block;
+      position: absolute;
+      top: 50px;
+      right: 50px;
+    }
+}
+  
+/*Fin Estilos del navbar*/
+
+/*Estilos del banner movil*/
+@media screen and (max-width: 576px) {
+    .carousel-mobile{
+        height: 100vh;
+    }
+    .image-content-1{
+        height: 100vh;
+    }
+    .logo-content-1{
+        width: 100%!important;
+    }
+}
+/*Estilos del banner movil*/
+
+/*Estilos del banner*/
+.image-content-1{
+    object-fit: cover;
+    position: relative;
+    justify-self: start;
+    align-self: start;
+}
+.logo-content-1{
+    position: absolute;
+    width: 40%!important;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/*Estilos del banner*/
+
+.container-image-quienes-somos{
+    min-height: 600px;
+    max-height: auto;
+    background-image: url(/images/image1.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+}
+.container-image-que-hacemos{
+    min-height: 500px;
+    max-height: auto;
+    background-image: url(/images/image2.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+}
+@media screen and (max-width: 576px) {
+    .container-image-quienes-somos{
+        min-height: 300px;
+    }
+    .container-image-que-hacemos{
+        min-height: 300px;
+    }
+}
+.owl-theme .owl-nav.disabled + .owl-dots{
+    margin-top: 5rem!important;
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+    background-color: #C5A181!important;
+}
+.centered-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
