@@ -14,6 +14,9 @@ body{
 .secondaryColor{
     color:#212121;
 }
+.thirdColor{
+    color: white;
+}
 
 .content-primary{ 
     background: #C5A181;
@@ -33,6 +36,9 @@ body{
 }
 .large-font{
     font-size: large;
+}
+.x-large-font{
+    font-size: x-large
 }
 .xxx-large-font{
     font-size: xxx-large!important;
@@ -344,4 +350,107 @@ a.menu-item:hover {
     --bs-accordion-bg: #C5A181;
     --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='tan'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
     --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='tan'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+/* .container-image-form{
+    background-image: url(/images/slider1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(1px);
+} */
+
+.container-image-form {
+    background-size: cover;
+    position: relative;
+    background-image: url(/images/background-contact.png);
+    background-repeat: no-repeat;
+}
+
+.filter-img{
+    filter: brightness(200%) saturate(0%);
+}
+@media screen and (max-width: 500px) {
+    .sm-none-card{
+        display: none;
+    }
+}
+
+
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	/* Compensate for excess margin on outer gallery flex items */
+	margin: -1rem -1rem;
+}
+
+.gallery-item {
+	/* Minimum width of 24rem and grow to fit available space */
+	flex: 1 0 24rem;
+	/* Margin value should be half of grid-gap value as margins on flex items don't collapse */
+	margin: 1rem;
+	/* box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4); */
+	overflow: hidden;
+    border-radius: 20px;
+}
+
+.gallery-image {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 400ms ease-out;
+}
+
+.gallery-image:hover {
+	transform: scale(1.15);
+}
+
+/*
+
+The following rule will only run if your browser supports CSS grid.
+
+Remove or comment-out the code block below to see how the browser will fall-back to flexbox styling. 
+
+*/
+
+@supports (display: grid) {
+	.gallery {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+		grid-gap: 2rem;
+	}
+
+	.gallery,
+	.gallery-item {
+		margin: 0;
+	}
+}
+
+@media (min-width: 750px) and (max-width: 896px) { 
+    @supports (display: grid) {
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+            grid-gap: 2rem;
+        }
+    }
+}
+
+@media screen and (max-width: 749px) {
+    @supports (display: grid) {
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+            grid-gap: 2rem;
+        }
+    }
+}
+
+.social-images-network{
+    width: 5%;
+}
+@media screen and (max-width: 576px) {
+    .social-images-network{
+        width: 10%;
+    }
 }
