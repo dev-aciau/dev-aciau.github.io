@@ -1,27 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="smooth-scroll">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link  rel="icon"   href="images/logo.png" type="image/png" />
+    <link  rel="icon"   href="assets/images/brand/logo.png" type="image/png" />
     <title>Cafetería</title>
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+    <!-- Google Fonts - Raleway -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/vendors/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/vendors/owl-carousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/vendors/owl-carousel/assets/owl.theme.default.min.css">
 </head>
 <body>
-    <script src="jquery/jquery-3.6.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <script src="assets/vendors/jquery/jquery-3.6.1.min.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.min.js"></script>
+    <script src="assets/vendors/owl-carousel/owl.carousel.min.js"></script>
     
     
     <!-- Navbar Section -->
     
     <nav id='nav'>
         <div class='brand nav-group'>
-            <img class="logo-navbar2 img-fluid" src="./images/logo.png" alt="" width="50">
+            <img class="logo-navbar2 img-fluid" src="assets/images/brand/logo.png" alt="" width="50">
         </div>
         <div class='menus nav-group'>
           <div class="hamburger">
@@ -40,252 +44,88 @@
         </div>
     </nav>
 
-    <!-- Sección Banner Carousel -->
-    <div id="seccion-principal">
-        <div id="bannerCarousel" class="carousel slide carousel-mobile" data-bs-ride="carousel" data-bs-interval="300000" data-bs-keyboard="true">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="0" class="buttons-slider slider-active active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="1" class="buttons-slider slider-active" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="2" class="buttons-slider slider-active" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="row gx-0 content-1 align-items-center text-center">
-                        <img src="images/slider1.png" class="image-content-1">
-                        <div class="col-md">
-                            <img src="images/logo.png" class="logo-content-1">
-                        </div>    
-                    </div>
-                </div>
-                <div class="carousel-item item">
-                    <div class="row gx-0 content-1 align-items-center text-center">
-                        <img src="images/slider1.png" class="image-content-1">
-                        <div class="col-md">
-                            <h1 class="logo-content-1 white" i18n-key="text-slide-3">Texto Slide 2</h1>
-                        </div>    
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="row gx-0 content-1 align-items-center text-center">
-                        <img src="images/slider1.png" class="image-content-1">
-                        <div class="col-md">
-                            <h1 class="logo-content-1 white" i18n-key="text-slide-3">Texto Slide 3</h1>
-                        </div>    
+    <!-- Hero Section -->
+    <div id="seccion-principal" class="hero-section">
+        <div class="hero-content">
+            <div class="container">
+                <div class="row justify-content-center align-items-center min-vh-100">
+                    <div class="col-lg-8 col-md-10 text-center">
+                        <!-- <div class="hero-logo mb-4">
+                            <img src="assets/images/brand/logo.png" class="logo-hero img-fluid" alt="Logo">
+                        </div> -->
+                        <h1 class="hero-title mb-3">Título Principal</h1>
+                        <p class="hero-subtitle mb-4">Experiencia gastronómica excepcional con los mejores sabores y ambiente acogedor</p>
+                        <a href="#seccion-menu" class="btn btn-cta btn-lg">Botón Principal</a>
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="hero-background">
+            <img src="assets/images/gallery/slider1.png" class="hero-bg-image" alt="Background">
         </div>
     </div>
 
     <!-- Sección Quiénes Somos -->
-    <div id="seccion-quienes-somos">
-        <div class="row align-items-center gx-0 container-yellow py-5">
-            <div class="col-md-6 col-lg-6 text-center">
-                <div class="text-container-5">
-                    <h1 class="regular-font" i18n-key="content-4-title">
-                        <span class="bold-font">¿Quiénes somos?</span>
-                        
-                    </h1>
-                    <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 46" width="50%" height="46">
-                        <title>divisor1-svg</title>
-                        <style>
-                            .s0 { fill: #C5A181 } 
-                        </style>
-                        <g id="Layer">
-                            <g id="Layer">
-                                <path id="Layer" class="s0" d="m79.7 24c0 0-13.7 6.9-29.7 0 0 0 16-6.9 29.7 0z"/>
-                                <g id="Layer">
-                                    <path id="Layer" class="s0" d="m65 9.3c0 0 5.4 11 18.9 14.4 0 0-6.9-12.1-18.9-14.4z"/>
-                                    <path id="Layer" class="s0" d="m83.9 24.3c0 0-5.4 11-18.9 14.4 0 0 6.8-12.1 18.9-14.4z"/>
-                                </g>
-                            </g>
-                            <path id="Layer" class="s0" d="m109.9 27.3c-1.9 0-3.4-1.5-3.4-3.3 0-1.8 1.5-3.3 3.4-3.3 1.8 0 3.3 1.5 3.3 3.3 0 1.8-1.5 3.3-3.3 3.3z"/>
-                            <g id="Layer">
-                                <g id="Layer">
-                                    <path id="Layer" class="s0" d="m1120.3 24c0 0 13.7 6.9 29.7 0 0 0-16-6.9-29.7 0z"/>
-                                    <g id="Layer">
-                                        <path id="Layer" class="s0" d="m1135 9.3c0 0-5.4 11-18.9 14.4 0 0 6.9-12.1 18.9-14.4z"/>
-                                        <path id="Layer" class="s0" d="m1116.1 24.3c0 0 5.4 11 18.9 14.4 0 0-6.8-12.1-18.9-14.4z"/>
-                                    </g>
-                                </g>
-                                <path id="Layer" class="s0" d="m1090.1 27.3c-1.8 0-3.3-1.5-3.3-3.3 0-1.8 1.5-3.3 3.3-3.3 1.9 0 3.4 1.5 3.4 3.3 0 1.8-1.5 3.3-3.4 3.3z"/>
-                            </g>
-                            <g id="Layer">
-                                <path id="Layer" class="s0" d="m76 24h1055.8"/>
-                                <path id="Layer" class="s0" d="m1131.8 25.7h-1055.8c-1 0-1.8-0.7-1.8-1.7 0-1 0.8-1.7 1.8-1.7h1055.8c1 0 1.8 0.7 1.8 1.7 0 1-0.8 1.7-1.8 1.7z"/>
-                            </g>
-                        </g>
-                    </svg>
-                    <div class="text-container-2" style="padding-left: 10%!important; padding-right: 10%!important;">
-                        <p class="inter-regular" style="font-size: initial; line-height: 200%; text-align: justify;">
-                            <span i18n-key="text-1-section-1">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Placeat impedit porro delectus. Non vel eligendi similique consequuntur deleniti sunt cupiditate suscipit,
-                                voluptatum dolores fuga amet assumenda eos, quia culpa ullam.
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            </span>
-                        </p>
-                        <p class="inter-regular" style="font-size: initial; line-height: 200%; text-align: justify;">
-                            <span i18n-key="text-2-section-1">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Placeat impedit porro delectus. Non vel eligendi similique consequuntur deleniti sunt cupiditate suscipit,
-                                voluptatum dolores fuga amet assumenda eos, quia culpa ullam.
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            </span>
-                        </p>
-                        <p class="inter-regular" style="font-size: initial; line-height: 200%; text-align: justify;">
-                            <span i18n-key="text-2-section-1">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Placeat impedit porro delectus. Non vel eligendi similique consequuntur deleniti sunt cupiditate suscipit,
-                            </span>
-                        </p>
+    <div id="seccion-quienes-somos" class="section-light">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6 text-center">
+                    <div class="content-wrapper">
+                        <h2 class="section-title">¿Quiénes somos?</h2>
+                        <div class="text-content">
+                            <p class="text-justify">
+                                Somos una cafetería comprometida con ofrecer la mejor experiencia gastronómica. 
+                                Nuestro equipo se dedica a crear momentos únicos para cada cliente, 
+                                combinando ingredientes de primera calidad con un ambiente acogedor y familiar.
+                            </p>
+                            <p class="text-justify">
+                                Desde nuestros inicios, hemos mantenido la tradición de servir productos frescos
+                                y preparados con dedicación. Cada taza de café y cada platillo que servimos 
+                                refleja nuestra pasión por la gastronomía y el servicio excepcional.
+                            </p>
+                            <p class="text-justify">
+                                Creemos que los mejores momentos se viven compartiendo buena comida 
+                                en compañía de las personas que más queremos.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="image-container">
+                        <img src="assets/images/gallery/image1.jpg" alt="Nuestra cafetería" class="img-fluid rounded shadow">
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-6">
-                <div class="container-image-quienes-somos m-5">
-        
-                </div>
-                <a onclick="location.href='#seccion-principal'" id="button-top-page"><img style="width: 50px !important" src="images/button-top.png"></a>
-                <!-- <a href="https://api.whatsapp.com/send?phone=529871005561" id="btnWhatsapp"><img style="width: 41px !important" src="images/logo-whatsapp.png"></a> -->
-            </div>
         </div>
+        <a onclick="location.href='#seccion-principal'" id="button-top-page"><img style="width: 50px !important" src="assets/images/gallery/button-top.png" alt="Ir arriba"></a>
     </div>
 
     <!-- Sección que hacemos -->
-    <div id="seccion-que-hacemos">
-        <div class="row align-items-center gx-0 content-primary py-3">
-            <div class="col-md-6 col-lg-6">
-                <div class="container-image-que-hacemos m-5">
-        
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-6 text-center">
-                <div class="text-container-5">
-                    <h1 class="regular-font secondaryColor" i18n-key="content-4-title">
-                        <span class="bold-font">¿A que nos dedicamos?</span>
-                    </h1>
-                    <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 46" width="50%" height="46">
-                        <title>divisor1-svg</title>
-                        <style>
-                            .s2 { fill: #212121 } 
-                        </style>
-                        <g id="Layer">
-                            <g id="Layer">
-                                <path id="Layer" class="s2" d="m79.7 24c0 0-13.7 6.9-29.7 0 0 0 16-6.9 29.7 0z"/>
-                                <g id="Layer">
-                                    <path id="Layer" class="s2" d="m65 9.3c0 0 5.4 11 18.9 14.4 0 0-6.9-12.1-18.9-14.4z"/>
-                                    <path id="Layer" class="s2" d="m83.9 24.3c0 0-5.4 11-18.9 14.4 0 0 6.8-12.1 18.9-14.4z"/>
-                                </g>
-                            </g>
-                            <path id="Layer" class="s2" d="m109.9 27.3c-1.9 0-3.4-1.5-3.4-3.3 0-1.8 1.5-3.3 3.4-3.3 1.8 0 3.3 1.5 3.3 3.3 0 1.8-1.5 3.3-3.3 3.3z"/>
-                            <g id="Layer">
-                                <g id="Layer">
-                                    <path id="Layer" class="s2" d="m1120.3 24c0 0 13.7 6.9 29.7 0 0 0-16-6.9-29.7 0z"/>
-                                    <g id="Layer">
-                                        <path id="Layer" class="s2" d="m1135 9.3c0 0-5.4 11-18.9 14.4 0 0 6.9-12.1 18.9-14.4z"/>
-                                        <path id="Layer" class="s2" d="m1116.1 24.3c0 0 5.4 11 18.9 14.4 0 0-6.8-12.1-18.9-14.4z"/>
-                                    </g>
-                                </g>
-                                <path id="Layer" class="s2" d="m1090.1 27.3c-1.8 0-3.3-1.5-3.3-3.3 0-1.8 1.5-3.3 3.3-3.3 1.9 0 3.4 1.5 3.4 3.3 0 1.8-1.5 3.3-3.4 3.3z"/>
-                            </g>
-                            <g id="Layer">
-                                <path id="Layer" class="s2" d="m76 24h1055.8"/>
-                                <path id="Layer" class="s2" d="m1131.8 25.7h-1055.8c-1 0-1.8-0.7-1.8-1.7 0-1 0.8-1.7 1.8-1.7h1055.8c1 0 1.8 0.7 1.8 1.7 0 1-0.8 1.7-1.8 1.7z"/>
-                            </g>
-                        </g>
-                    </svg>
-                    <div class="text-container-2" style="padding-left: 10%!important; padding-right: 10%!important;">
-                        <p class="inter-regular secondaryColor" style="font-size: initial; line-height: 200%; text-align: justify;">
-                            <span i18n-key="text-1-section-1">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Placeat impedit porro delectus. Non vel eligendi similique consequuntur deleniti sunt cupiditate suscipit,
-                                voluptatum dolores fuga amet assumenda eos, quia culpa ullam.
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            </span>
-                        </p>
-                        <p class="inter-regular secondaryColor" style="font-size: initial; line-height: 200%; text-align: justify;">
-                            <span i18n-key="text-2-section-1">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Placeat impedit porro delectus. Non vel eligendi similique consequuntur deleniti sunt cupiditate suscipit,
-                                voluptatum dolores fuga amet assumenda eos, quia culpa ullam.
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            </span>
-                        </p>
+    <div id="seccion-que-hacemos" class="section-dark">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-1 order-2">
+                    <div class="image-container">
+                        <img src="assets/images/gallery/image2.jpg" alt="Nuestros servicios" class="img-fluid rounded shadow">
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Sección Menú -->
-    <div id="seccion-menu">
-        <div class="row gx-0 content-secondary pt-5 pb-4">
-            <div class="col-md-12 text-center">
-                <h1 class="regular-font primaryColor" i18n-key="content-4-title">
-                    <span class="bold-font">Conoce parte de nuestro menú</span>
-                </h1>
-                <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 46" width="50%" height="46">
-                    <title>divisor1-svg</title>
-                    <style>
-                        .s0 { fill: #C5A181 } 
-                    </style>
-                    <g id="Layer1">
-                        <g id="Layer">
-                            <path id="Layer" class="s0" d="m79.7 24c0 0-13.7 6.9-29.7 0 0 0 16-6.9 29.7 0z"/>
-                            <g id="Layer">
-                                <path id="Layer" class="s0" d="m65 9.3c0 0 5.4 11 18.9 14.4 0 0-6.9-12.1-18.9-14.4z"/>
-                                <path id="Layer" class="s0" d="m83.9 24.3c0 0-5.4 11-18.9 14.4 0 0 6.8-12.1 18.9-14.4z"/>
-                            </g>
-                        </g>
-                        <path id="Layer" class="s0" d="m109.9 27.3c-1.9 0-3.4-1.5-3.4-3.3 0-1.8 1.5-3.3 3.4-3.3 1.8 0 3.3 1.5 3.3 3.3 0 1.8-1.5 3.3-3.3 3.3z"/>
-                        <g id="Layer">
-                            <g id="Layer">
-                                <path id="Layer" class="s0" d="m1120.3 24c0 0 13.7 6.9 29.7 0 0 0-16-6.9-29.7 0z"/>
-                                <g id="Layer">
-                                    <path id="Layer" class="s0" d="m1135 9.3c0 0-5.4 11-18.9 14.4 0 0 6.9-12.1 18.9-14.4z"/>
-                                    <path id="Layer" class="s0" d="m1116.1 24.3c0 0 5.4 11 18.9 14.4 0 0-6.8-12.1-18.9-14.4z"/>
-                                </g>
-                            </g>
-                            <path id="Layer" class="s0" d="m1090.1 27.3c-1.8 0-3.3-1.5-3.3-3.3 0-1.8 1.5-3.3 3.3-3.3 1.9 0 3.4 1.5 3.4 3.3 0 1.8-1.5 3.3-3.4 3.3z"/>
-                        </g>
-                        <g id="Layer">
-                            <path id="Layer" class="s0" d="m76 24h1055.8"/>
-                            <path id="Layer" class="s0" d="m1131.8 25.7h-1055.8c-1 0-1.8-0.7-1.8-1.7 0-1 0.8-1.7 1.8-1.7h1055.8c1 0 1.8 0.7 1.8 1.7 0 1-0.8 1.7-1.8 1.7z"/>
-                        </g>
-                    </g>
-                </svg>
-            </div>
-            <div class="row">
-                <div class="col-md-12 px-5">
-                    <div id="seccion-menu">
-                        <div class="row gx-0 container-yellow align-items-center">
-                            <div class="text-content-3 text-center">
-                                <div class="row gx-0">
-                                    <div class="col-sm-12 col-md-12">
-                                        <div class="major-carousel  js-carousel owl-carousel owl-theme owl-1 text-center">
-                                            <div class="item">
-                                                <img src="images/item-menu-1.jpg" style="width: 100%; border-radius: 30px;" alt="" class="card-img2 img-fluid">
-                                            </div>
-                                            <div class="item">
-                                                <img src="images/item-menu-2.jpg" style="width: 100%; border-radius: 30px;" alt="" class="card-img2 img-fluid">
-                                            </div>
-                                            <div class="item">
-                                                <img src="images/item-menu-3.jpg" style="width: 100%; border-radius: 30px;" alt="" class="card-img2 img-fluid">
-                                            </div>
-                                            <div class="item">
-                                                <img src="images/item-menu-4.jpg" style="width: 100%; border-radius: 30px;" alt="" class="card-img2 img-fluid">
-                                            </div>
-                                            <div class="item">
-                                                <img src="images/item-menu-5.jpg" style="width: 100%; border-radius: 30px;" alt="" class="card-img2 img-fluid">
-                                            </div>
-                                            <div class="item">
-                                                <img src="images/item-menu-6.jpg" style="width: 100%; border-radius: 30px;" alt="" class="card-img2 img-fluid">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                <div class="col-lg-6 text-center order-lg-2 order-1">
+                    <div class="content-wrapper">
+                        <h2 class="section-title text-white">¿A qué nos dedicamos?</h2>
+                        <div class="text-content">
+                            <p class="text-white text-justify">
+                                Nos especializamos en crear experiencias gastronómicas memorables a través de 
+                                nuestro café artesanal y platillos cuidadosamente preparados. Cada producto 
+                                que ofrecemos refleja nuestro compromiso con la calidad y la excelencia.
+                            </p>
+                            <p class="text-white text-justify">
+                                Nuestro equipo de expertos baristas y chefs trabaja diariamente para 
+                                sorprender a nuestros clientes con sabores únicos y presentaciones impecables,
+                                manteniendo siempre los más altos estándares de calidad.
+                            </p>
+                        </div>
+                        <div class="mt-4">
+                            <a href="#seccion-menu" class="btn btn-cta">Conoce nuestro menú</a>
                         </div>
                     </div>
                 </div>
@@ -293,188 +133,220 @@
         </div>
     </div>
 
-    <div class="row gx-0 p-5 content-primary">
-
-        <h1 class="regular-font secondaryColor text-center mb-5">
-            <span class="bold-font">Nuestra galería</span>
-        </h1>
-
-        <div class="gallery">
-    
-            <div class="gallery-item">
-                <img class="gallery-image" src="https://media-cdn.tripadvisor.com/media/photo-s/1b/cc/8b/eb/brunch-sabor-casero-muy.jpg" alt="">
+    <!-- Sección Menú -->
+    <div id="seccion-menu" class="section-light">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title">Conoce parte de nuestro menú</h2>
+                </div>
             </div>
-    
-            <div class="gallery-item">
-                <img class="gallery-image" src="https://www.consumoteca.com/wp-content/uploads/Restaurante-cafeter%C3%ADa.jpeg" alt="">
+            <div class="row">
+                <div class="col-12">
+                    <div class="menu-carousel">
+                        <div class="major-carousel js-carousel owl-carousel owl-theme owl-1 text-center">
+                            <div class="menu-item">
+                                <div class="menu-card">
+                                    <img src="assets/images/menu/item-menu-1.jpg" alt="Café Especial" class="menu-image">
+                                    <div class="menu-info">
+                                        <h4 class="menu-item-name">Café Especial</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-card">
+                                    <img src="assets/images/menu/item-menu-2.jpg" alt="Capuchino Artesanal" class="menu-image">
+                                    <div class="menu-info">
+                                        <h4 class="menu-item-name">Capuchino Artesanal</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-card">
+                                    <img src="assets/images/menu/item-menu-3.jpg" alt="Sandwich Gourmet" class="menu-image">
+                                    <div class="menu-info">
+                                        <h4 class="menu-item-name">Sandwich Gourmet</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-card">
+                                    <img src="assets/images/menu/item-menu-4.jpg" alt="Ensalada Fresca" class="menu-image">
+                                    <div class="menu-info">
+                                        <h4 class="menu-item-name">Ensalada Fresca</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-card">
+                                    <img src="assets/images/menu/item-menu-5.jpg" alt="Pasta Italiana" class="menu-image">
+                                    <div class="menu-info">
+                                        <h4 class="menu-item-name">Pasta Italiana</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-card">
+                                    <img src="assets/images/menu/item-menu-6.jpg" alt="Postre Especial" class="menu-image">
+                                    <div class="menu-info">
+                                        <h4 class="menu-item-name">Postre Especial</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-    
-            <div class="gallery-item">
-                <img class="gallery-image" src="https://media.vogue.mx/photos/5c47423afd68342c494fb74e/1:1/w_1600%2Cc_limit/isabella_cafe_en_cdmx_3511_960x960.jpg" alt="">
+            <div class="row mt-5">
+                <div class="col-12 text-center">
+                    <a href="#seccion-contacto" class="btn btn-cta btn-lg">Ver menú completo</a>
+                </div>
             </div>
-    
-            <div class="gallery-item">
-                <img class="gallery-image" src="https://i0.wp.com/goula.lat/wp-content/uploads/2020/06/cafe%CC%81-.jpg?fit=1000%2C841&ssl=1" alt="">
-            </div>
-    
-            <div class="gallery-item">
-                <img class="gallery-image" src="https://a.storyblok.com/f/112937/568x464/2d67d04fce/las-mejores-cafeterias-tematicas-del-mundo.jpg/m/620x0/filters:quality(70)/" alt="">
-            </div>
-    
-            <div class="gallery-item">
-                <img class="gallery-image" src="https://escapadas.mexicodesconocido.com.mx/wp-content/uploads/2022/09/31640CBB-AE53-4A50-A55A-BF76D5FBD6C6.jpg" alt="">
-            </div>
-    
         </div>
-    
     </div>
-    
-    <!-- Seccion ubicacion solo pantallas sm -->
-    <div id="seccion-ubicacion-sm" class="d-block d-sm-block d-md-none d-lg-none d-xl-none d-xxl-none">
-        <div class="row gx-0 content-secondary p-5">
-            <div class="row">
-                <h1 class="regular-font primaryColor text-center">
-                    <span class="bold-font">Ubicación y horarios</span>
-                </h1>
-                <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 46" width="50%" height="46">
-                    <title>divisor1-svg</title>
-                    <style>
-                        .s0 { fill: #C5A181 } 
-                    </style>
-                    <g id="Layer1">
-                        <g id="Layer">
-                            <path id="Layer" class="s0" d="m79.7 24c0 0-13.7 6.9-29.7 0 0 0 16-6.9 29.7 0z"/>
-                            <g id="Layer">
-                                <path id="Layer" class="s0" d="m65 9.3c0 0 5.4 11 18.9 14.4 0 0-6.9-12.1-18.9-14.4z"/>
-                                <path id="Layer" class="s0" d="m83.9 24.3c0 0-5.4 11-18.9 14.4 0 0 6.8-12.1 18.9-14.4z"/>
-                            </g>
-                        </g>
-                        <path id="Layer" class="s0" d="m109.9 27.3c-1.9 0-3.4-1.5-3.4-3.3 0-1.8 1.5-3.3 3.4-3.3 1.8 0 3.3 1.5 3.3 3.3 0 1.8-1.5 3.3-3.3 3.3z"/>
-                        <g id="Layer">
-                            <g id="Layer">
-                                <path id="Layer" class="s0" d="m1120.3 24c0 0 13.7 6.9 29.7 0 0 0-16-6.9-29.7 0z"/>
-                                <g id="Layer">
-                                    <path id="Layer" class="s0" d="m1135 9.3c0 0-5.4 11-18.9 14.4 0 0 6.9-12.1 18.9-14.4z"/>
-                                    <path id="Layer" class="s0" d="m1116.1 24.3c0 0 5.4 11 18.9 14.4 0 0-6.8-12.1-18.9-14.4z"/>
-                                </g>
-                            </g>
-                            <path id="Layer" class="s0" d="m1090.1 27.3c-1.8 0-3.3-1.5-3.3-3.3 0-1.8 1.5-3.3 3.3-3.3 1.9 0 3.4 1.5 3.4 3.3 0 1.8-1.5 3.3-3.4 3.3z"/>
-                        </g>
-                        <g id="Layer">
-                            <path id="Layer" class="s0" d="m76 24h1055.8"/>
-                            <path id="Layer" class="s0" d="m1131.8 25.7h-1055.8c-1 0-1.8-0.7-1.8-1.7 0-1 0.8-1.7 1.8-1.7h1055.8c1 0 1.8 0.7 1.8 1.7 0 1-0.8 1.7-1.8 1.7z"/>
-                        </g>
-                    </g>
-                </svg>
-            </div>
-            <div class="row">
-                <p class="text-center primaryColor"><b>Dirección: </b>Calle 6 s/n entre 9 y 11. Colonia Vicente Guerrero</p>
-            </div>
-            <div class="row justify-content-center align-items-center"> 
-                <table class="table primaryColor">
-                    <thead>
-                        <tr>
-                        <th colspan="2" class="text-center">Horarios</th>
-                        </tr>
-                    </thead>
-                    <tbody class="text-center">
-                        <tr>
-                            <td>Lunes:</td>
-                            <td>9:00 am a 10:00pm</td>
-                        </tr>
-                        <tr>
-                            <td>Martes:</td>
-                            <td>9:00 am a 10:00pm</td>
-                        </tr>
-                        <tr>
-                            <td>Miércoles:</td>
-                            <td>9:00 am a 10:00pm</td>
-                        </tr>
-                        <tr>
-                            <td>Jueves:</td>
-                            <td>9:00 am a 10:00pm</td>
-                        </tr>
-                        <tr>
-                            <td>Viernes:</td>
-                            <td>9:00 am a 10:00pm</td>
-                        </tr>
-                        <tr>
-                            <td>Sábado:</td>
-                            <td>9:00 am a 10:00pm</td>
-                        </tr>
-                        <tr>
-                            <td>Domingo:</td>
-                            <td>9:00 am a 10:00pm</td>
-                        </tr>
 
-                        </tr>
-                    </tbody>
-                </table>
+    <!-- Galería mejorada -->
+    <div class="section-dark">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title text-white">Nuestra galería</h2>
+                </div>
+            </div>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img class="gallery-image" src="https://media-cdn.tripadvisor.com/media/photo-s/1b/cc/8b/eb/brunch-sabor-casero-muy.jpg" alt="Ambiente acogedor de nuestra cafetería">
+                </div>
+                <div class="gallery-item">
+                    <img class="gallery-image" src="https://www.consumoteca.com/wp-content/uploads/Restaurante-cafeter%C3%ADa.jpeg" alt="Interior moderno y elegante">
+                </div>
+                <div class="gallery-item">
+                    <img class="gallery-image" src="https://media.vogue.mx/photos/5c47423afd68342c494fb74e/1:1/w_1600%2Cc_limit/isabella_cafe_en_cdmx_3511_960x960.jpg" alt="Detalles únicos de decoración">
+                </div>
+                <div class="gallery-item">
+                    <img class="gallery-image" src="https://i0.wp.com/goula.lat/wp-content/uploads/2020/06/cafe%CC%81-.jpg?fit=1000%2C841&ssl=1" alt="Área de preparación artesanal">
+                </div>
+                <div class="gallery-item">
+                    <img class="gallery-image" src="https://a.storyblok.com/f/112937/568x464/2d67d04fce/las-mejores-cafeterias-tematicas-del-mundo.jpg/m/620x0/filters:quality(70)/" alt="Espacio para relajarse">
+                </div>
+                <div class="gallery-item">
+                    <img class="gallery-image" src="https://escapadas.mexicodesconocido.com.mx/wp-content/uploads/2022/09/31640CBB-AE53-4A50-A55A-BF76D5FBD6C6.jpg" alt="Terraza al aire libre">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección Testimonios -->
+    <div class="section-light">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title">Lo que dicen nuestros clientes</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-avatar">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="María González" class="avatar-image">
+                        </div>
+                        <div class="testimonial-content">
+                            <p class="testimonial-text">
+                                "El mejor café de la ciudad. El ambiente es perfecto para trabajar o relajarse. 
+                                Definitivamente mi lugar favorito para reunirme con amigos."
+                            </p>
+                            <h5 class="testimonial-author">María González</h5>
+                            <div class="testimonial-stars">★★★★★</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-avatar">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Carlos López" class="avatar-image">
+                        </div>
+                        <div class="testimonial-content">
+                            <p class="testimonial-text">
+                                "Excelente servicio y comida deliciosa. Los precios son justos y la calidad 
+                                es excepcional. El personal siempre es muy amable."
+                            </p>
+                            <h5 class="testimonial-author">Carlos López</h5>
+                            <div class="testimonial-stars">★★★★★</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-avatar">
+                            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Ana Martínez" class="avatar-image">
+                        </div>
+                        <div class="testimonial-content">
+                            <p class="testimonial-text">
+                                "Cada visita es una experiencia única. La variedad del menú es increíble 
+                                y todo está preparado con mucho cuidado y atención al detalle."
+                            </p>
+                            <h5 class="testimonial-author">Ana Martínez</h5>
+                            <div class="testimonial-stars">★★★★★</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-12 text-center">
+                    <a href="#seccion-contacto" class="btn btn-cta btn-lg">Comparte tu experiencia</a>
+                </div>
             </div>
         </div>
     </div>
 
     <!-- Sección ubicación -->
-    <div id="seccion-ubicacion">
-        <div class="row gx-0 content-1 align-items-center text-center">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d233.1060087665579!2d-88.19743050567136!3d20.803577415794535!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2smx!4v1691033522451!5m2!1ses-419!2smx" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
-            <div class="d-none d-sm-none d-md-block d-lg-block d-xl-block d-xxl-block">
-                <div class="position-card-ubication">
-                    <div class="accordion" id="accordionPanelsStayOpenExample">
-                        <div class="accordion-item">
-                          <h2 class="accordion-header">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                              Ubicación y horarios
-                            </button>
-                          </h2>
-                          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
-                            <div class="accordion-body">
-                                <div class="row"> 
-                                    <p class="text-start"><b>Dirección: </b>Calle 6 s/n entre 9 y 11. Colonia Vicente Guerrero</p>
-                                </div>
-                                <div class="row"> 
-                                    <table class="table">
-                                        <thead>
-                                            <tr>
-                                            <th colspan="2">Horarios</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>Lunes:</td>
-                                                <td>9:00 am a 10:00pm</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Martes:</td>
-                                                <td>9:00 am a 10:00pm</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Miércoles:</td>
-                                                <td>9:00 am a 10:00pm</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Jueves:</td>
-                                                <td>9:00 am a 10:00pm</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Viernes:</td>
-                                                <td>9:00 am a 10:00pm</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Sábado:</td>
-                                                <td>9:00 am a 10:00pm</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Domingo:</td>
-                                                <td>9:00 am a 10:00pm</td>
-                                            </tr>
-
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
+    <div id="seccion-ubicacion" class="section-dark">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-12 text-center mb-4">
+                    <h2 class="section-title text-white">Encuéntranos aquí</h2>
+                    <p class="text-white">Te esperamos en nuestra ubicación con el mejor ambiente y servicio</p>
+                </div>
+            </div>
+        </div>
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d233.1060087665579!2d-88.19743050567136!3d20.803577415794535!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2smx!4v1691033522451!5m2!1ses-419!2smx" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+            
+            <!-- Información de ubicación mejorada -->
+            <div class="location-overlay">
+                <div class="location-info-modern">
+                    <div class="location-header">
+                        <h3>Información de ubicación</h3>
+                    </div>
+                    <div class="location-content">
+                        <div class="location-item">
+                            <div class="location-icon">
+                                <span>📍</span>
                             </div>
-                          </div>
+                            <div class="location-text">
+                                <strong>Dirección</strong>
+                                <p>Calle 6 s/n entre 9 y 11<br>Colonia Vicente Guerrero</p>
+                            </div>
+                        </div>
+                        
+                        <div class="location-item">
+                            <div class="location-icon">
+                                <span>🕒</span>
+                            </div>
+                            <div class="location-text">
+                                <strong>Horarios</strong>
+                                <p>Lunes a Domingo<br>9:00 AM - 10:00 PM</p>
+                            </div>
+                        </div>
+                        
+                        <div class="location-item">
+                            <div class="location-icon">
+                                <span>📞</span>
+                            </div>
+                            <div class="location-text">
+                                <strong>Contacto</strong>
+                                <p>+52 985 114 2300<br>contacto@cafeteria.com</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -483,133 +355,159 @@
     </div>
     
     <!-- Sección contacto -->
-    <div id="seccion-contacto">
-        <div class="row gx-0 content-primary">
-            <div class="col-md-6 container-image-form p-5">
-                <div class="pt-5">
-                    <div class="my-1">
-                        <div class="row justify-content-around">
-                            <p class="xx-large-font thirdColor"> Dirección:</p>
-                        </div>  
-                    </div>
-                    <div class="my-1">
-                        <div class="row justify-content-around">
-                            <p class="medium-font thirdColor"> Calle 6 s/n entre 9 y 11 colonia Vicente Guerrero</p>
-                        </div>  
-                    </div>
-                    <div class="my-1">
-                        <div class="row justify-content-around">
-                            <p class="xx-large-font thirdColor">Correo electrónico</p>
-                        </div>  
-                    </div>
-                    <div class="my-1">    
-                        <div class="row justify-content-around">
-                            <p class="medium-font thirdColor">abraham_ciau17@gmail.com</p>
-                        </div>  
-                    </div>
-                    <div class="my-1">
-                        <div class="row justify-content-around" style="width: 10%!important">
-                            <p class="xx-large-font thirdColor">Teléfono</p>
-                        </div>  
-                    </div>
-                    <div class="my-1">
-                        <div class="row justify-content-around">
-                            <p class="medium-font thirdColor"> +52 9851142300</p>
-                        </div>  
-                    </div>
-                    <div class="my-1">
-                        <div class="row justify-content-around">
-                            <p class="xx-large-font thirdColor">Nuestras redes sociales</p>
-                        </div>  
-                        <div class="row">
-                            <div>
-                                <a href=""><img class="mx-2 social-images-network" src="/images/icon-facebook_w.png" alt=""></a>
-                                <a href=""><img class="mx-2 social-images-network" src="/images/icon-instagram_w.png" alt=""></a>
-                                <a href=""><img class="mx-2 social-images-network" src="/images/icon-whatsapp_w.png" alt=""></a>
-                                <a href=""><img class="mx-2 social-images-network" src="/images/icon-tiktok_w.png" alt=""></a>
+    <div id="seccion-contacto" class="section-light">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-1 order-2">
+                    <div class="contact-info">
+                        <div class="pt-3">
+                            <div class="contact-item mb-4">
+                                <h4 class="contact-label">Dirección:</h4>
+                                <p class="contact-value">Calle 6 s/n entre 9 y 11 colonia Vicente Guerrero</p>
+                            </div>
+                            <div class="contact-item mb-4">
+                                <h4 class="contact-label">Correo electrónico:</h4>
+                                <p class="contact-value">contacto@cafeteria.com</p>
+                            </div>
+                            <div class="contact-item mb-4">
+                                <h4 class="contact-label">Teléfono:</h4>
+                                <p class="contact-value">+52 985 114 2300</p>
+                            </div>
+                            <div class="contact-item mb-4">
+                                <h4 class="contact-label">Nuestras redes sociales:</h4>
+                                <div class="contact-social">
+                                    <a href="#" class="contact-social-link">
+                                        <img src="assets/images/icons/icon-facebook_w.png" alt="Facebook">
+                                    </a>
+                                    <a href="#" class="contact-social-link">
+                                        <img src="assets/images/icons/icon-instagram_w.png" alt="Instagram">
+                                    </a>
+                                    <a href="#" class="contact-social-link">
+                                        <img src="assets/images/icons/icon-whatsapp_w.png" alt="WhatsApp">
+                                    </a>
+                                    <a href="#" class="contact-social-link">
+                                        <img src="assets/images/icons/icon-tiktok_w.png" alt="TikTok">
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="col-lg-6 order-lg-2 order-1">
+                    <div class="contact-form-section">
+                        <h2 class="section-title mb-3">Contacto</h2>
+                        <p class="mb-4">
+                            Contacta a uno de nuestros asesores y recibe la información
+                            del servicio de tu interés.
+                        </p>
+                        <form class="contact-form">
+                            <div class="form-group mb-3">
+                                <label for="nombre" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre">
+                            </div>
+                            <div class="form-group mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="correo" placeholder="Ingresa tu email">
+                            </div>
+                            <div class="form-group mb-4">
+                                <label for="mensaje" class="form-label">Mensaje</label>
+                                <textarea class="form-control" id="mensaje" rows="4" placeholder="Escribe tu mensaje aquí"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-cta btn-lg w-100">Enviar mensaje</button>
+                        </form>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-6 p-5">
-                <h4 class="pt-5 bold-font secondaryColor" style="font-size: xxx-large;" i18n-key="title-section-4">Contacto</h4>
-                <p class="regular-font secondaryColor" style="font-size: medium;" i18n-key="text-section-4">
-                    Contacta a uno de nuestros asesores y recibe la información
-                    de servicio de tu interés.
-                </p>
-                <form>
-                    <div class="form-group">
-                      <label for="nombre">Nombre</label>
-                      <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre">
+        </div>
+    </div>
+    
+    <!-- CTA Section antes del footer -->
+    <div class="cta-section section-accent">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="cta-title text-white mb-3">¿Listo para vivir una experiencia única?</h2>
+                    <p class="cta-subtitle text-white mb-4">
+                        Visítanos y descubre por qué somos la cafetería favorita de la ciudad
+                    </p>
+                    <div class="cta-buttons">
+                        <a href="#seccion-menu" class="btn btn-outline-light btn-lg me-3 mb-2">Ver menú</a>
+                        <a href="#seccion-ubicacion" class="btn btn-light btn-lg mb-2">Cómo llegar</a>
                     </div>
-                    <div class="form-group">
-                      <label for="email">Email</label>
-                      <input type="email" class="form-control" id="correo" placeholder="Ingresa tu email">
-                    </div>
-                    <div class="form-group">
-                      <label for="mensaje">Mensaje</label>
-                      <textarea class="form-control" id="mensaje" rows="4" placeholder="Escribe tu mensaje aquí"></textarea>
-                    </div>
-                    <br>
-                    <button type="submit" class="btn btn-primary">Enviar</button>
-                </form>
+                </div>
             </div>
         </div>
     </div>
     
 
     <!--Footer-->
-    <div>
-        <div class="row gx-0 footer content-10 align-items-center text-start py-3 px-5 regular-font primary-color-text" style="font-size:medium;">
-            <div class="d-none d-md-block d-lg-block d-xl-block d-xxl-block col-md-1 py-5">
-                <a>
-                    <p class="visually-hidden"> Breakpoint </p>
-                </a>
+    <footer class="section-accent">
+        <div class="container py-5">
+            <div class="row">
+                <!-- Columna 1: Logo y Links -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="footer-section">
+                        <img src="assets/images/brand/logo.png" alt="Logo" class="footer-logo mb-3">
+                        <h5 class="footer-title">Enlaces rápidos</h5>
+                        <ul class="footer-links">
+                            <li><a href="#seccion-principal">Inicio</a></li>
+                            <li><a href="#seccion-quienes-somos">Quiénes Somos</a></li>
+                            <li><a href="#seccion-menu">Menú</a></li>
+                            <li><a href="#seccion-contacto">Contacto</a></li>
+                            <li><a href="#seccion-ubicacion">Ubicación</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Columna 2: Horarios -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="footer-section">
+                        <h5 class="footer-title">Horarios de atención</h5>
+                        <div class="footer-hours">
+                            <p><strong>Lunes a Viernes:</strong><br>9:00 AM - 10:00 PM</p>
+                            <p><strong>Sábados:</strong><br>9:00 AM - 10:00 PM</p>
+                            <p><strong>Domingos:</strong><br>9:00 AM - 10:00 PM</p>
+                            <p><strong>Días festivos:</strong><br>Horario especial</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Columna 3: Contacto y Redes Sociales -->
+                <div class="col-lg-4 col-md-12 mb-4">
+                    <div class="footer-section">
+                        <h5 class="footer-title">Contáctanos</h5>
+                        <div class="footer-contact">
+                            <p><strong>Dirección:</strong><br>Calle 6 s/n entre 9 y 11<br>Colonia Vicente Guerrero<br>Temozón, Yucatán, México</p>
+                            <p><strong>Teléfono:</strong><br>+52 985 114 2300</p>
+                            <p><strong>Email:</strong><br>contacto@cafeteria.com</p>
+                            <p><strong>WhatsApp:</strong><br>+52 985 114 2300</p>
+                        </div>
+                        
+                        <h6 class="footer-social-title">Síguenos en:</h6>
+                        <div class="footer-social">
+                            <a href="#" class="social-link"><img src="assets/images/icons/icon-facebook_w.png" alt="Facebook"> Facebook</a>
+                            <a href="#" class="social-link"><img src="assets/images/icons/icon-instagram_w.png" alt="Instagram"> Instagram</a>
+                            <a href="#" class="social-link"><img src="assets/images/icons/icon-whatsapp_w.png" alt="WhatsApp"> WhatsApp</a>
+                            <a href="#" class="social-link"><img src="assets/images/icons/icon-tiktok_w.png" alt="TikTok"> TikTok</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-sm-12 col-md-2 pb-2">
-                <p class="align-img-footer"><img src="images/logo.png" class="img-fluid py-3" width="150"></p>
-            </div>
-            <div class="d-block d-sm-block d-md-none d-lg-none d-xl-none d-xxl-none" style="width: 90%; height: 2px; background-color: #C5A181"></div>
-            <div class="d-none d-md-block d-lg-block d-xl-block d-xxl-block col-md-1 py-5">
-                <svg width="2" height="150" viewBox="0 0 2 248" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-left: 80%;">
-                    <line x1="1" y1="4.37114e-08" x2="0.999989" y2="248" stroke="#C5A181" stroke-width="2"/>
-                </svg>
-            </div>
-            <div class="col-sm-12 col-md-4 pb-2">
-                <p i18n-key="text-1-footer">
-                    Dirección:
-                </p>
-                <p i18n-key="text-2-footer">
-                    Calle 6 s/n entre 9 y 11 colonia Vicente Guerrero
-                </p>
-                <p i18n-key="text-3-footer">
-                    Temozón, Yucatán, Mexico
-                </p>
-            </div>
-            <div class="d-block d-sm-block d-md-none d-lg-none d-xl-none d-xxl-none" style="width: 90%; height: 2px; background-color: #C5A181"></div>
-            <div class="d-none d-md-block d-lg-block d-xl-block d-xxl-block col-md-1 py-5">
-                <svg width="2" height="150" viewBox="0 0 2 248" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-left: 80%;">
-                    <line x1="1" y1="4.37114e-08" x2="0.999989" y2="248" stroke="#C5A181" stroke-width="2"/>
-                </svg>
-            </div>
-            <div class="col-sm-12 col-md-3 pb-2">
-                <p i18n-key="text-2-card-ubication">
-                    Teléfono. +52 9851142300
-                </p>
-                <p i18n-key="text-3-card-ubication">
-                    Correo electrónico: abraham_ciau17@hotmail.com
-                </p>
-                <p i18n-key="text-4-card-ubication">
-                    Whatsapp: 9851142300
-                </p>
-                <p i18n-key="text-4-card-ubication">
-                    Made by: dev-aciau
-                </p>
+            
+            <!-- Footer Bottom -->
+            <div class="row mt-4">
+                <div class="col-12">
+                    <div class="footer-bottom text-center">
+                        <hr class="footer-divider">
+                        <p class="footer-copyright">
+                            © 2024 Cafetería. Todos los derechos reservados. | Desarrollado por dev-aciau
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <script src="js/animations.js"></script>
-    <script src="js/carousel.conf.js"></script>
+    </footer>
+    <script src="assets/js/animations.js"></script>
+    <script src="assets/js/carousel.conf.js"></script>
 </body>
 </html>
