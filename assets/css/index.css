@@ -106,7 +106,8 @@ p {
 }
 
 /* CTA Button */
-.btn-cta {
+.btn-cta,
+.btn.btn-cta {
     background: linear-gradient(135deg, #C5A181 0%, #A08660 100%);
     color: white;
     border: none;
@@ -121,7 +122,8 @@ p {
     font-family: 'Raleway', sans-serif;
 }
 
-.btn-cta:hover {
+.btn-cta:hover,
+.btn.btn-cta:hover {
     background: linear-gradient(135deg, #A08660 0%, #8B7355 100%);
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(197, 161, 129, 0.4);
@@ -134,7 +136,14 @@ p {
     .hero-title { font-size: 2.5rem; }
     .hero-subtitle { font-size: 1.2rem; }
     .hero-content { padding: 2rem 0; }
-    .btn-cta { padding: 0.8rem 2rem; font-size: 1.1rem; }
+    .btn-cta, .btn.btn-cta { 
+        padding: 0.8rem 2rem; 
+        font-size: 1.1rem; 
+    }
+    .btn-cta:hover, .btn.btn-cta:hover { 
+        color: white; 
+        transform: translateY(-2px);
+    }
 }
 
 .primaryColor{
@@ -637,7 +646,7 @@ footer {
 @media (max-width: 768px) {
     .location-overlay {
         position: static;
-        margin: 2rem 1rem 0;
+        margin: 3rem 1.5rem 2rem;
         max-width: none;
     }
     
@@ -646,11 +655,38 @@ footer {
     }
     
     .location-content {
-        padding: 1rem;
+        padding: 1.2rem;
     }
     
     .location-item {
-        margin-bottom: 1rem;
+        margin-bottom: 1.2rem;
+    }
+}
+
+/* Extra responsive para móviles pequeños */
+@media (max-width: 480px) {
+    .location-overlay {
+        margin: 2.5rem 1rem 2.5rem;
+    }
+    
+    .location-content {
+        padding: 1rem;
+    }
+    
+    .location-header {
+        padding: 1.2rem;
+    }
+    
+    .location-header h3 {
+        font-size: 1.1rem;
+    }
+    
+    .location-text strong {
+        font-size: 1rem;
+    }
+    
+    .location-text p {
+        font-size: 0.9rem;
     }
 }
 
@@ -1192,5 +1228,303 @@ Remove or comment-out the code block below to see how the browser will fall-back
 @media screen and (max-width: 576px) {
     .social-images-network{
         width: 10%;
+    }
+}
+
+/* ========================================
+   VERSIONES ALTERNATIVAS - QUIENES SOMOS
+========================================= */
+
+/* VERSIÓN 1: Full Width Design con overlay */
+.fullwidth-image-section {
+    position: relative;
+    height: 100%;
+    min-height: 500px;
+    overflow: hidden;
+}
+
+.fullwidth-image {
+    width: 100%;
+    height: 100%;
+    min-height: 500px;
+    object-fit: cover;
+}
+
+.fullwidth-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 50%, transparent 100%);
+    padding: 3rem;
+    color: white;
+}
+
+.overlay-content {
+    text-align: center;
+}
+
+.icon-badge {
+    width: 80px;
+    height: 80px;
+    background: #C5A181;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    font-size: 2rem;
+    box-shadow: 0 10px 20px rgba(197, 161, 129, 0.3);
+}
+
+.overlay-content h4 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.overlay-content p {
+    font-size: 1rem;
+    opacity: 0.9;
+    margin: 0;
+}
+
+.fullwidth-content-section {
+    padding: 4rem 3rem;
+    background: linear-gradient(135deg, #fafafa 0%, #f5f5f5 100%);
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+}
+
+.content-inner {
+    width: 100%;
+}
+
+.content-badge {
+    background: linear-gradient(135deg, #C5A181, #A08660);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 15px rgba(197, 161, 129, 0.3);
+}
+
+.content-subtitle {
+    color: #212121;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.content-text {
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 2.5rem;
+    font-size: 1.1rem;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.feature-item {
+    display: flex;
+    align-items: flex-start;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.feature-icon {
+    font-size: 1.8rem;
+    margin-right: 1rem;
+    flex-shrink: 0;
+}
+
+.feature-content h5 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #212121;
+    margin-bottom: 0.3rem;
+}
+
+.feature-content p {
+    font-size: 0.85rem;
+    color: #666;
+    margin: 0;
+    line-height: 1.4;
+}
+
+.cta-section-btn {
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.title-underline {
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(to right, #C5A181, #A08660);
+    margin: 0 auto;
+}
+
+.title-underline-white {
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(to right, #C5A181, #A08660);
+    margin: 0 auto;
+}
+
+/* Versiones para fondo oscuro */
+.fullwidth-content-section-dark {
+    padding: 4rem 3rem;
+    background: transparent;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+}
+
+.content-badge-white {
+    background: linear-gradient(135deg, #C5A181, #A08660);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 15px rgba(197, 161, 129, 0.3);
+}
+
+.content-subtitle-white {
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.content-text-white {
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.8;
+    margin-bottom: 2.5rem;
+    font-size: 1.1rem;
+}
+
+.feature-item-dark {
+    display: flex;
+    align-items: flex-start;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(197, 161, 129, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-item-dark:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(197, 161, 129, 0.2);
+    background: rgba(197, 161, 129, 0.1);
+    border-color: rgba(197, 161, 129, 0.3);
+}
+
+.feature-item-dark .feature-content h5 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 0.3rem;
+}
+
+.feature-item-dark .feature-content p {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0;
+    line-height: 1.4;
+}
+
+/* Responsive styles for features grid */
+@media (max-width: 768px) {
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        margin-bottom: 2rem;
+    }
+    
+    .feature-item,
+    .feature-item-dark {
+        padding: 1.25rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .feature-item:hover,
+    .feature-item-dark:hover {
+        transform: translateY(-2px);
+    }
+    
+    .fullwidth-content-section,
+    .fullwidth-content-section-dark {
+        padding: 3rem 2rem;
+        min-height: 400px;
+    }
+    
+    .content-subtitle,
+    .content-subtitle-white {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .content-text,
+    .content-text-white {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .features-grid {
+        gap: 0.75rem;
+    }
+    
+    .feature-item,
+    .feature-item-dark {
+        padding: 1rem;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .feature-icon {
+        font-size: 1.5rem;
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+    }
+    
+    .fullwidth-content-section,
+    .fullwidth-content-section-dark {
+        padding: 2rem 1.5rem;
+        min-height: 350px;
+    }
+    
+    .content-subtitle,
+    .content-subtitle-white {
+        font-size: 1.3rem;
     }
 }
